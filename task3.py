@@ -12,15 +12,13 @@ using the .grid() method
 
 window = tk.Tk()
 window.title("Example")
-window.geometry("350x150")
-window.resizable(False,False)
-
 dogphoto = PhotoImage(file="dog.png")
-label1 = tk.Label(window, image=dogphoto)
-label2 = tk.Label(window, text="A cuddly little puppy! This is from the same creators who brought you Keropi and Kero Kero", bg="#aaffff")
-
-label1.grid(row = 1, column = 3)
-label2.grid(row =1, column =1, rowspan=4)
+dog = tk.Label(window, image=dogphoto)
+bluetext = tk.Label(window, text="A cuddly little puppy! This is from the same \n creators who brought you Keropi and Kero Kero", bg="#aaffff", )
+pochacco = tk.Label(window, text= "Pochacco!" )
+dog.grid(row = 1, column = 3)
+bluetext.grid(row =2, column =1, columnspan=5)
+pochacco.grid(row= 1, column = 4)
 
 
 

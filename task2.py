@@ -32,6 +32,10 @@ bde = tk.Entry (window, borderwidth= 2, width = 20)
 sbn= tk.Button (window, text= "Search by Name")
 sbne= tk.Entry (window, width = 20 )
 
+previous = tk.Button (window, text = "< Previous")
+next = tk.Button (window, text= "Next >")
+saveentry= tk.Button (window, text = "Save Entry")
+
 
 dog.grid(row = 1, column = 1, rowspan = 3)
 cd.grid(row = 2, column = 3 )
@@ -50,5 +54,8 @@ bde.grid (row=5, column = 5)
 sbn.grid (row= 1, column=4)
 sbne.grid(row=1, column = 5)
 
+previous.grid(row=6, column = 1)
+next.grid(row= 6, column = 5)
+saveentry.grid(row= 6, column =3)
 
 window.mainloop()

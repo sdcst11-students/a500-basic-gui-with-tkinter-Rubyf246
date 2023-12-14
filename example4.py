@@ -12,7 +12,7 @@ corner of the window.  Distances are measured in pixels
 """
 window = tk.Tk()
 window.title("Hi!")
-window.geometry("200x400")
+#window.geometry("200x400")
 
 label1 = tk.Label(window,text="Text that does\nnothing is a label", bg="#ee0000")
 
